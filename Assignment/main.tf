@@ -3,6 +3,7 @@ provider "azurerm" {
   subscription_id = var.subscription_id
 }
 
+
 # Resource Group Module
 module "resource_group" {
   source   = "./modules/resource_group"
