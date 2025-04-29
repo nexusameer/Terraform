@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+Droplet/terraform.tfvars
+Droplet/terraform.tfstate
+Droplet/terraform.tfstate.backup
