@@ -13,10 +13,21 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
   -out /etc/nginx/ssl/nginx.crt \
   -subj "/C=US/ST=NY/L=NYC/O=Example/CN=$PUBLIC_IP"
 
+sudo apt install certbot python3-certbot-nginx
+sudo certbot --nginx
+
 # Create custom Nginx config
 cat > /etc/nginx/sites-available/default <<EOF
+# Redirect HTTP to HTTPS
 server {
     listen 80;
+    server_name $PUBLIC_IP;
+
+    return 301 https://\$host\$request_uri;
+}
+
+# HTTPS server
+server {
     listen 443 ssl;
     server_name $PUBLIC_IP;
 
@@ -29,5 +40,7 @@ server {
     }
 }
 EOF
+
+
 
 systemctl restart nginx
