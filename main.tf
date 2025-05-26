@@ -13,11 +13,11 @@ provider "digitalocean" {
   token = var.digitalocean_token
 }
 
-resource "digitalocean_droplet" "web" {
+resource "digitalocean_droplet" "fleetbase" {
   image     = "ubuntu-24-04-x64"
-  name      = "web"
-  region    = "nyc1"
+  name      = "fleetbase"
+  region    = "sfo3"
   size      = "s-1vcpu-1gb"
-  user_data = file("init-script.sh")
+  # user_data = file("init-script.sh")
   ssh_keys  = var.ssh_key
 }
