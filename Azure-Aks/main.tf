@@ -12,6 +12,9 @@ module "vnet" {
     vnet_name = var.vnet_name
     rg_location = module.rg.rg_location
     rg_name = module.rg.rg_name
+    subnet_name = var.subnet_name
+    subnet_prefix = var.subnet_prefix
+    address_space = var.address_space
 }
 
 module "akv" {
