@@ -1,0 +1,2 @@
+variable "filename" {}
+variable "prefix" {}

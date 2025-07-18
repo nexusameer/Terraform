@@ -1,0 +1,10 @@
+variable "rg_name" {}
+variable "rg_location" {}
+variable "vnet_name" {}
+variable "akv_name" {}
+variable "aks_name" {}
+variable "node_count" {}
+variable "node_pool_name" {}
+variable "vm_size" {}
+variable "" {}
+variable "" {}
