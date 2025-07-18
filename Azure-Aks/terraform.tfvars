@@ -1,0 +1,1 @@
+vm_size = Standard_D2_v2
