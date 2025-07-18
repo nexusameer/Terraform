@@ -6,5 +6,6 @@ variable "aks_name" {}
 variable "node_count" {}
 variable "node_pool_name" {}
 variable "vm_size" {}
-variable "" {}
-variable "" {}
+variable "subnet_name" {}
+variable "subnet_prefix" {}
+variable "address_space" {}
