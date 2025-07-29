@@ -1,0 +1,14 @@
+variable "vpc_tenancy" {}
+variable "vpc_cidr" {}
+variable "vpc_dns_support" {}
+variable "vpc_dns_hostnames" {}
+variable "sub1_cidr" {}
+variable "sub2_cidr" {}
+variable "map_public_ip_on_launch" {}
+variable "instance_type" {}
+variable "alb_type" {}
+variable "alb_internal" {}
+variable "alb_name" {}
+variable "tg_name" {}
+variable "bucket" {}
+variable "key_name" {}
