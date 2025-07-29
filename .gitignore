@@ -1,7 +1,17 @@
+# Ignore Terraform directories
 **/.terraform/
-*.tfstate*
-Aws/terraform.tfvars
-Azure/terraform.tfvars
-Digital-Ocean/Droplet1/terraform.tfvars
-gitlab-secrets-poc/terraform.tfvars
-Practice/terraform.tfvars
+**/.terraform.lock.hcl
+
+# Ignore Terraform state files
+**/*.tfstate
+**/*.tfstate.backup
+
+# Variable files with secrets
+**/terraform.tfvars
+
+# Ignore variable files containing secrets
+    # Aws/terraform.tfvars
+    # Azure/terraform.tfvars
+    # Digital-Ocean/Droplet1/terraform.tfvars
+    # gitlab-secrets-poc/terraform.tfvars
+    # Practice/terraform.tfvars
