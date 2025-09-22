@@ -1,0 +1,27 @@
+
+variable "psql_private_dns_zone_name" {}
+variable "keyvault_private_dns_zone_name" {}
+variable "fap_private_dns_zone_name" {}
+variable "acr_private_dns_name" {}
+variable "app_sensor_vnet_id" {}
+variable "gitlab_resource_group_name" {}
+variable "sensor_link_name" {}
+variable "batch_private_dns_zone_name" {}
+variable "table_private_dns_zone_name" {}
+variable "queue_private_dns_zone_name" {}
+variable "blob_private_dns_zone_name" {}
+variable "file_private_dns_zone_name" {}
+variable "core_vnet_id" {}
+variable "core_link_name" {}
+variable "sensor_blob_link_name" {}
+variable "eventhub_private_dns_zone_name" {}
+variable "psql_link_name" {}
+variable "acr_link_name" {}
+variable "blob_link_name" {}
+variable "ch_link_name" {}
+variable "ch_vnet_id" {}
+variable "aks_link_name_ch" {}
+variable "aks_link_name_core" {}
+variable "aks_private_dns_zone_name" {}
+variable "eventhub_link_name" {}
+variable "environment" {}

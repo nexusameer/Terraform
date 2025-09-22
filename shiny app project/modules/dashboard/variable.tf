@@ -1,0 +1,12 @@
+variable "dashboard_name" {}
+variable "environment" {}
+variable "sensor_rg_name" {}
+variable "sensor_rg_location" {}
+variable "shiny_vm_id" {}
+variable "shiny_vm_name" {}
+variable "web_app" {}
+variable "web_app_name" {}
+variable "contol_panel_app" {}
+variable "contol_panel_app_name" {}
+variable "bootdiagnostic_id" {}
+variable "bootdiagnostic_name" {}

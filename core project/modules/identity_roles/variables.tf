@@ -1,0 +1,10 @@
+variable "batch_account_id" {}
+variable "keyvault_id" {}
+variable "core_acr_name" {}
+variable "adf_principal_id" {}
+variable "core_dalalake_name" {}
+variable "core_storage_name" {}
+variable "core_functionapp_name" {}
+variable "function_app_id" {}
+variable "entra_object_id" {}
+variable "batch_identity_principal_id" {}

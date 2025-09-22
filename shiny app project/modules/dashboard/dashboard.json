@@ -1,0 +1,475 @@
+{
+  "lenses": {
+    "0": {
+      "order": 0,
+      "parts": {
+        "0": {
+          "position": {
+            "x": 0,
+            "y": 0,
+            "colSpan": 6,
+            "rowSpan": 4
+          },
+          "metadata": {
+            "inputs": [
+              { "name": "options", "isOptional": true },
+              { "name": "sharedTimeRange", "isOptional": true }
+            ],
+            "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+            "settings": {
+              "content": {
+                "options": {
+                  "chart": {
+                    "metrics": [
+                      {
+                        "resourceMetadata": {
+                          "id": "${shiny_vm_id}"
+                        },
+                        "name": "Percentage CPU",
+                        "aggregationType": 1,
+                        "namespace": "Microsoft.Compute/virtualMachines",
+                        "metricVisualization": {
+                          "displayName": "CPU Usage"
+                        }
+                      }
+                    ],
+                    "title": "Virtual Machine CPU Usage for ${shiny_vm_name}",
+                    "visualization": { "chartType": 2 }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "1": {
+          "position": {
+            "x": 6,
+            "y": 0,
+            "colSpan": 6,
+            "rowSpan": 4
+          },
+          "metadata": {
+            "inputs": [
+              { "name": "options", "isOptional": true },
+              { "name": "sharedTimeRange", "isOptional": true }
+            ],
+            "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+            "settings": {
+              "content": {
+                "options": {
+                  "chart": {
+                    "metrics": [
+                      {
+                        "resourceMetadata": {
+                          "id": "${web_app}"
+                        },
+                        "name": "HttpResponseTime",
+                        "aggregationType": 1,
+                        "namespace": "Microsoft.Web/sites",
+                        "metricVisualization": {
+                          "displayName": "Response Time"
+                        }
+                      }
+                    ],
+                    "title": "Web App High Response Time for ${web_app_name}",
+                    "visualization": { "chartType": 2 }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "2": {
+          "position": {
+            "x": 12,
+            "y": 0,
+            "colSpan": 6,
+            "rowSpan": 4
+          },
+          "metadata": {
+            "inputs": [
+              { "name": "options", "isOptional": true },
+              { "name": "sharedTimeRange", "isOptional": true }
+            ],
+            "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+            "settings": {
+              "content": {
+                "options": {
+                  "chart": {
+                    "metrics": [
+                      {
+                        "resourceMetadata": {
+                          "id": "${web_app}"
+                        },
+                        "name": "Http4xx",
+                        "aggregationType": 2,
+                        "namespace": "Microsoft.Web/sites",
+                        "metricVisualization": {
+                          "displayName": "HTTP 4xx Errors"
+                        }
+                      }
+                    ],
+                    "title": "Web App High HTTP 4xx Errors for ${web_app_name}",
+                    "visualization": { "chartType": 2 }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "3": {
+          "position": {
+            "x": 0,
+            "y": 4,
+            "colSpan": 6,
+            "rowSpan": 4
+          },
+          "metadata": {
+            "inputs": [
+              { "name": "options", "isOptional": true },
+              { "name": "sharedTimeRange", "isOptional": true }
+            ],
+            "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+            "settings": {
+              "content": {
+                "options": {
+                  "chart": {
+                    "metrics": [
+                      {
+                        "resourceMetadata": {
+                          "id": "${web_app}"
+                        },
+                        "name": "Http5xx",
+                        "aggregationType": 2,
+                        "namespace": "Microsoft.Web/sites",
+                        "metricVisualization": {
+                          "displayName": "HTTP 5xx Errors"
+                        }
+                      }
+                    ],
+                    "title": "Web App High HTTP 5xx Errors for ${web_app_name}",
+                    "visualization": { "chartType": 2 }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "4": {
+          "position": {
+            "x": 6,
+            "y": 4,
+            "colSpan": 6,
+            "rowSpan": 4
+          },
+          "metadata": {
+            "inputs": [
+              { "name": "options", "isOptional": true },
+              { "name": "sharedTimeRange", "isOptional": true }
+            ],
+            "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+            "settings": {
+              "content": {
+                "options": {
+                  "chart": {
+                    "metrics": [
+                      {
+                        "resourceMetadata": {
+                          "id": "${web_app}"
+                        },
+                        "name": "HealthCheckStatus",
+                        "aggregationType": 1,
+                        "namespace": "Microsoft.Web/sites",
+                        "metricVisualization": {
+                          "displayName": "Health Check Status"
+                        }
+                      }
+                    ],
+                    "title": "Web App Health Check Failure for ${web_app_name}",
+                    "visualization": { "chartType": 2 }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "5": {
+          "position": {
+            "x": 12,
+            "y": 4,
+            "colSpan": 6,
+            "rowSpan": 4
+          },
+          "metadata": {
+            "inputs": [
+              { "name": "options", "isOptional": true },
+              { "name": "sharedTimeRange", "isOptional": true }
+            ],
+            "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+            "settings": {
+              "content": {
+                "options": {
+                  "chart": {
+                    "metrics": [
+                      {
+                        "resourceMetadata": {
+                          "id": "${contol_panel_app}"
+                        },
+                        "name": "HttpResponseTime",
+                        "aggregationType": 1,
+                        "namespace": "Microsoft.Web/sites",
+                        "metricVisualization": {
+                          "displayName": "Response Time"
+                        }
+                      }
+                    ],
+                    "title": "Control Panel App High Response Time for ${contol_panel_app_name}",
+                    "visualization": { "chartType": 2 }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "6": {
+          "position": {
+            "x": 0,
+            "y": 8,
+            "colSpan": 6,
+            "rowSpan": 4
+          },
+          "metadata": {
+            "inputs": [
+              { "name": "options", "isOptional": true },
+              { "name": "sharedTimeRange", "isOptional": true }
+            ],
+            "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+            "settings": {
+              "content": {
+                "options": {
+                  "chart": {
+                    "metrics": [
+                      {
+                        "resourceMetadata": {
+                          "id": "${contol_panel_app}"
+                        },
+                        "name": "Http4xx",
+                        "aggregationType": 2,
+                        "namespace": "Microsoft.Web/sites",
+                        "metricVisualization": {
+                          "displayName": "HTTP 4xx Errors"
+                        }
+                      }
+                    ],
+                    "title": "Control Panel App High HTTP 4xx Errors for ${contol_panel_app_name}",
+                    "visualization": { "chartType": 2 }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "7": {
+          "position": {
+            "x": 6,
+            "y": 8,
+            "colSpan": 6,
+            "rowSpan": 4
+          },
+          "metadata": {
+            "inputs": [
+              { "name": "options", "isOptional": true },
+              { "name": "sharedTimeRange", "isOptional": true }
+            ],
+            "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+            "settings": {
+              "content": {
+                "options": {
+                  "chart": {
+                    "metrics": [
+                      {
+                        "resourceMetadata": {
+                          "id": "${contol_panel_app}"
+                        },
+                        "name": "Http5xx",
+                        "aggregationType": 2,
+                        "namespace": "Microsoft.Web/sites",
+                        "metricVisualization": {
+                          "displayName": "HTTP 5xx Errors"
+                        }
+                      }
+                    ],
+                    "title": "Control Panel App High HTTP 5xx Errors for ${contol_panel_app_name}",
+                    "visualization": { "chartType": 2 }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "8": {
+          "position": {
+            "x": 12,
+            "y": 8,
+            "colSpan": 6,
+            "rowSpan": 4
+          },
+          "metadata": {
+            "inputs": [
+              { "name": "options", "isOptional": true },
+              { "name": "sharedTimeRange", "isOptional": true }
+            ],
+            "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+            "settings": {
+              "content": {
+                "options": {
+                  "chart": {
+                    "metrics": [
+                      {
+                        "resourceMetadata": {
+                          "id": "${contol_panel_app}"
+                        },
+                        "name": "HealthCheckStatus",
+                        "aggregationType": 1,
+                        "namespace": "Microsoft.Web/sites",
+                        "metricVisualization": {
+                          "displayName": "Health Check Status"
+                        }
+                      }
+                    ],
+                    "title": "Control Panel App Health Check Failure for ${contol_panel_app_name}",
+                    "visualization": { "chartType": 2 }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "9":{
+          "position": { "x": 0, "y": 12, "colSpan": 6, "rowSpan": 4 },
+          "metadata": {
+            "inputs": [
+              { "name": "options", "isOptional": true },
+              { "name": "sharedTimeRange", "isOptional": true }
+            ],
+            "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+            "settings": {
+              "content": {
+                "options": {
+                  "chart": {
+                    "metrics": [
+                      {
+                        "resourceMetadata": {
+                          "id": "${shiny_vm_id}"  
+                        },
+                        "name": "Available Memory Bytes",  
+                        "aggregationType": 4,  
+                        "namespace": "Microsoft.Compute/virtualMachines",  
+                        "metricVisualization": { "displayName": "Track memory utilization for capacity planning (via guest metrics)" }
+                      }
+                    ],
+                    "title": "Track memory utilization for capacity planning (via guest metrics) ${shiny_vm_name}",  
+                    "visualization": { "chartType": 2 }  
+                  }
+                }
+              }
+            }
+          }
+        },
+        "10":{
+          "position": { "x": 6, "y": 12, "colSpan": 6, "rowSpan": 4 },
+          "metadata": {
+            "inputs": [
+              { "name": "options", "isOptional": true },
+              { "name": "sharedTimeRange", "isOptional": true }
+            ],
+            "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+            "settings": {
+              "content": {
+                "options": {
+                  "chart": {
+                    "metrics": [
+                      {
+                        "resourceMetadata": {
+                          "id": "${web_app}"  
+                        },
+                        "name": "AverageResponseTime",  
+                        "aggregationType": 4,  
+                        "namespace": "Microsoft.Web/sites",  
+                        "metricVisualization": { "displayName": "Track average response time to assess app performance" }
+                      }
+                    ],
+                    "title": "Track average response time to assess app performance ${web_app_name}",  
+                    "visualization": { "chartType": 2 }  
+                  }
+                }
+              }
+            }
+          }
+        },
+        "11":{
+          "position": { "x": 12, "y": 12, "colSpan": 6, "rowSpan": 4 },
+          "metadata": {
+            "inputs": [
+              { "name": "options", "isOptional": true },
+              { "name": "sharedTimeRange", "isOptional": true }
+            ],
+            "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+            "settings": {
+              "content": {
+                "options": {
+                  "chart": {
+                    "metrics": [
+                      {
+                        "resourceMetadata": {
+                          "id": "${contol_panel_app}"  
+                        },
+                        "name": "AverageResponseTime",  
+                        "aggregationType": 4,  
+                        "namespace": "Microsoft.Web/sites",  
+                        "metricVisualization": { "displayName": "Track average response time to assess app performance" }
+                      }
+                    ],
+                    "title": "Track average response time to assess app performance ${contol_panel_app_name}",  
+                    "visualization": { "chartType": 2 }  
+                  }
+                }
+              }
+            }
+          }
+        },
+        "12":{
+          "position": { "x": 0, "y": 16, "colSpan": 6, "rowSpan": 4 },
+          "metadata": {
+            "inputs": [
+              { "name": "options", "isOptional": true },
+              { "name": "sharedTimeRange", "isOptional": true }
+            ],
+            "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+            "settings": {
+              "content": {
+                "options": {
+                  "chart": {
+                    "metrics": [
+                      {
+                        "resourceMetadata": {
+                          "id": "${bootdiagnostic_id}/blobServices/default"  
+                        },
+                        "name": "BlobCapacity",  
+                        "aggregationType": 4,  
+                        "namespace": "Microsoft.Storage/storageAccounts/blobServices",  
+                        "metricVisualization": { "displayName": "Monitor blob capacity growth" }
+                      }
+                    ],
+                    "title": "Monitor blob capacity growth. ${bootdiagnostic_name}",  
+                    "visualization": { "chartType": 2 }  
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

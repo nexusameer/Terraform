@@ -1,0 +1,65 @@
+variable "resource_group_name_core" {}
+variable "resource_group_name_sensor" {}
+variable "resource_group_name_ch" {}
+variable "resource_group_name_connectivity" {}
+variable "az-kv-we-core" {}
+variable "environment" {}
+# variable "az_vnet_we_sensor_dashboard" {}
+variable "az_snet_we_pe_sensor" {}
+variable "az_snet_we_webapp_sensor" {}
+variable "az_snet_we_vm_sensor" {}
+variable "acr_private_dns_name" {}
+variable "blob_private_dns_name" {}
+variable "file_private_dns_name" {}
+variable "table_private_dns_name" {}
+variable "queue_private_dns_name" {}
+variable "private_dns_zone_name_webapp" {}
+variable "dns_record_westeurope_data" {}
+variable "dns_record_azcrweapp" {}
+variable "resource_group_name_kcri" {}
+variable "action_group_name" {}
+variable "resource_group_name_gitlab" {}
+variable "core_rg" {}
+variable "dns_rg_name" {}
+variable "core_vnet" {}
+# variable "core_db_subnet_name" {}
+variable "core_lss_subnet_name" {}
+variable "psql_private_dns_zone_name" {}
+variable "gitlab_rg" {}
+variable "admin_principal_name" {}
+variable "az_vnet_we_ch" {}
+variable "az_vnet_we_connectivity" {}
+variable "az_snet_we_aks_ch" {}
+variable "az_snet_we_agic_ch" {}
+variable "az_snet_we_agic_connectivity" {}
+variable "az_snet_we_vm_inv" {}
+variable "fapp_storage_acc_name" {}
+variable "tags" {
+  description = "Dynamic map of tags to apply to resources"
+  type        = map(string)
+  default     = {}
+}
+variable "container_registry_name" {}
+variable "aks_private_dns_zone_name" {}
+variable "gitlab_vnet_name" {}
+variable "core_lss_batch_subnet_name" {}
+variable "core_ml_batch_subnet_name" {}
+variable "identity_name" {}
+variable "batch_private_dns_zone_name" {}
+variable "gitlab_resource_group_name" {}
+variable "core_pe_subnet_name" {}
+variable "core_eh_subnet_name" {}
+variable "eh_private_dns_zone_name" {}
+variable "core_lss_fap_subnet_name" {}
+variable "core_inv_fap_subnet_name" {}
+variable "core_ml_fap_subnet_name" {}
+variable "core_inv_pe_subnet_name" {}
+variable "core_ml_pe_subnet_name" {}
+variable "pe_subnet_ch_name" {}
+variable "core_inv_db_subnet_name" {}
+variable "ch_db_subnet_name" {}
+variable "azurerm_log_analytics_workspace_name" {}
+variable "soc_security_rg_name" {}
+variable "acrdpcore_name" {}
+# variable "appgw_name" {}
+variable "adf_name" {}

@@ -1,0 +1,10 @@
+variable "gitlab_acr_link_name" {}
+variable "core_resource_group_name" {}
+variable "core_acr_private_dns_name" {}
+variable "gitlab_vnet_id" {}
+variable "gitlab_psql_dns_vnet_name" {}
+variable "core_psql_private_dns_name" {}
+variable "gitlab_batch_link_name" {}
+variable "core_batch_private_dns_name" {}
+variable "environment" {}
+variable "tags" {}

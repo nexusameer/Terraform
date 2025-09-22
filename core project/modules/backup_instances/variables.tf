@@ -1,0 +1,10 @@
+variable "core_rg_location" {}
+variable "core_rg_id" {}
+variable "psql_server_id" {}
+variable "backup_vault_id" {}
+variable "backup_vault_principal_id" {}
+variable "az_pstgre_we_sensor_db_core" {}
+variable "psql_policy_name" {}
+variable "fapp_storage_acc_name" {}
+variable "fapp_storage_account_id" {}
+variable "storage_account_policy_name" {}  

@@ -1,0 +1,9 @@
+variable "nsg_name" {}
+variable "location" {}
+variable "resource_group_ch_name" {}
+variable "environment" {}
+variable "tags" {}
+variable "aks_ch_subnet_id" {}
+variable "ch_db_subnet_id" {}
+variable "ch_pe_subnet_id" {}
+variable "ch_appgtw_subnet_id" {}

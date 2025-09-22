@@ -1,0 +1,9 @@
+variable "node_pool_name" {}
+variable "kubernetes_cluster_id" {}
+variable "vm_size" {}
+variable "node_count" {}
+variable "vnet_subnet_id" {}
+variable "auto_scaling_enabled" {}
+variable "node_min_count" {}
+variable "node_max_count" {}
+variable "tags" {}

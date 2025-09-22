@@ -1,0 +1,39 @@
+module "agic" {
+  source              = "./modules/agic"
+  resource_group_name = module.import_resources.ch_rg_name
+  location            = var.location
+  #   subscription_id               = var.app_subscription_id
+  # aks_cluster_id                  = module.aks.id
+  vnet_id                                = module.import_resources.ch_vnet_id
+  subnet_id                              = module.import_resources.ch_agic_subnet_id
+  appgw_name                             = var.appgw_name
+  environment                            = var.environment
+  gateway_ip_configuration               = var.gateway_ip_configuration
+  appgw_public_ip_name                   = var.appgw_public_ip_name
+  sku_name                               = var.sku_name
+  sku_tier                               = var.sku_tier
+  sku_capacity                           = var.sku_capacity
+  frontend_public_ip_configuration_name  = var.frontend_public_ip_configuration_name
+  frontend_private_ip_configuration_name = var.frontend_private_ip_configuration_name
+  ssl_certificate_name                   = var.ssl_certificate_name
+  certfile_path                          = var.certfile_path
+  cert_password                          = var.cert_password
+  private_ip_address                     = var.agic_private_ip_address
+  frontend_port                          = var.frontend_port
+  backend_address_pool_name              = var.backend_address_pool_name
+  backend_http_settings_name             = var.backend_http_settings_name
+  cookie_based_affinity                  = var.cookie_based_affinity
+  backend_http_settings_port             = var.backend_http_settings_port
+  backend_http_settings_protocol         = var.backend_http_settings_protocol
+  request_timeout                        = var.request_timeout
+  http_listener_name                     = var.http_listener_name
+  frontend_port_name                     = var.frontend_port_name
+  frontend_http_listener_protocol        = var.frontend_http_listener_protocol
+  request_routing_rule_name              = var.request_routing_rule_name
+  rule_type                              = var.rule_type
+  zones                                  = var.zones
+  tags                                   = var.tags
+  providers = {
+    azurerm = azurerm.apps
+  }
+}

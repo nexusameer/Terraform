@@ -1,0 +1,21 @@
+variable "batch_primary_access_key" {}
+variable "batch_account_name" {}
+variable "batch_job_name" {}
+variable "acr_login_server_name" {}
+variable "shinyapp_batch_name" {}
+variable "pstgre_db_username" {}
+variable "pstgre_db_password" {}
+variable "sensor_db_name" {}
+variable "postgres_host" {}
+variable "postgres_port" {}
+variable "storage_account_key" {}
+variable "shinyapp_db_name" {}
+variable "shinyapp_storage_name" {}
+variable "datalake_account_name" {}
+variable "datalake_account_key" {}
+variable "bronze_container_name" {}
+variable "silver_container_name" {}
+variable "key_vault_id" {}
+variable "core_datalake_primary_key" {}
+variable "core_datalake_access_key" {}
+

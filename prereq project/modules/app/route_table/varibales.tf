@@ -1,0 +1,12 @@
+variable "app_route_table_name" {}
+variable "app_route" {}
+variable "app_route_address_prefix" {}
+variable "app_next_hop_type" {}
+variable "app_next_hop_ip_address" {}
+variable "environment" {}
+variable "app_sensor_resource_group_location" {}
+variable "app_sensor_resource_group_name" {}
+variable "private_endpoint_sensor_subnet_id" {}
+variable "webapp_sensor_subnet_id" {}
+variable "virtual_machine_sensor_subnet_id" {}
+variable "tags" {}

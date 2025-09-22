@@ -1,0 +1,505 @@
+{
+  "lenses": {
+    "0": {
+      "order": 0,
+      "parts": {
+        "0": {
+          "position": { "x": 0, "y": 0, "colSpan": 6, "rowSpan": 4 },
+          "metadata": {
+            "inputs": [
+              { "name": "options", "isOptional": true },
+              { "name": "sharedTimeRange", "isOptional": true }
+            ],
+            "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+            "settings": {
+              "content": {
+                "options": {
+                  "chart": {
+                    "metrics": [
+                      {
+                        "resourceMetadata": {
+                          "id": "${datalake_id}"
+                        },
+                        "name": "Availability",
+                        "aggregationType": 4,
+                        "namespace": "microsoft.storage/storageaccounts",
+                        "metricVisualization": { "displayName": "Availability" }
+                      }
+                    ],
+                    "title": "Datalake Availability for ${datalake_name}",
+                    "visualization": { "chartType": 2 }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "1": {
+          "position": { "x": 6, "y": 0, "colSpan": 6, "rowSpan": 4 },
+          "metadata": {
+            "inputs": [
+              { "name": "options", "isOptional": true },
+              { "name": "sharedTimeRange", "isOptional": true }
+            ],
+            "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+            "settings": {
+              "content": {
+                "options": {
+                  "chart": {
+                    "metrics": [
+                      {
+                        "resourceMetadata": {
+                          "id": "${datalake_id}"
+                        },
+                        "name": "UsedCapacity",
+                        "aggregationType": 1,
+                        "namespace": "microsoft.storage/storageaccounts",
+                        "metricVisualization": { "displayName": "UsedCapacity" }
+                      }
+                    ],
+                    "title": "Datalake Used Capacity for ${datalake_name}",
+                    "visualization": { "chartType": 2 }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "2": {
+          "position": { "x": 12, "y": 0, "colSpan": 6, "rowSpan": 4 },
+          "metadata": {
+            "inputs": [
+              { "name": "options", "isOptional": true },
+              { "name": "sharedTimeRange", "isOptional": true }
+            ],
+            "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+            "settings": {
+              "content": {
+                "options": {
+                  "chart": {
+                    "metrics": [
+                      {
+                        "resourceMetadata": {
+                          "id": "${batch_id}"
+                        },
+                        "name": "TaskFailEvent",
+                        "aggregationType": 4,
+                        "namespace": "microsoft.batch/batchAccounts",
+                        "metricVisualization": { "displayName": "TaskFailEvent" }
+                      }
+                    ],
+                    "title": "Batch TaskFailEvent ${batch_name}",
+                    "visualization": { "chartType": 2 }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "3": {
+          "position": { "x": 0, "y": 4, "colSpan": 6, "rowSpan": 4 },
+          "metadata": {
+            "inputs": [
+              { "name": "options", "isOptional": true },
+              { "name": "sharedTimeRange", "isOptional": true }
+            ],
+            "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+            "settings": {
+              "content": {
+                "options": {
+                  "chart": {
+                    "metrics": [
+                      {
+                        "resourceMetadata": {
+                          "id": "${batch_id}"
+                        },
+                        "name": "RunningNodeCount",
+                        "aggregationType": 4,
+                        "namespace": "microsoft.batch/batchAccounts",
+                        "metricVisualization": { "displayName": "RunningNodeCount" }
+                      }
+                    ],
+                    "title": "Batch RunningNodeCount for ${batch_name}",
+                    "visualization": { "chartType": 2 }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "4": {
+          "position": { "x": 6, "y": 4, "colSpan": 6, "rowSpan": 4 },
+          "metadata": {
+            "inputs": [
+              { "name": "options", "isOptional": true },
+              { "name": "sharedTimeRange", "isOptional": true }
+            ],
+            "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+            "settings": {
+              "content": {
+                "options": {
+                  "chart": {
+                    "metrics": [
+                      {
+                        "resourceMetadata": {
+                          "id": "${azsawestagingcore_id}"
+                        },
+                        "name": "Availability",
+                        "aggregationType": 1,
+                        "namespace": "microsoft.storage/storageaccounts",
+                        "metricVisualization": { "displayName": "Transactions Failed" }
+                      }
+                    ],
+                    "title": "Storage Account Availability for ${azsawestagingcore_name}",
+                    "visualization": { "chartType": 2 }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "5": {
+          "position": { "x": 12, "y": 4, "colSpan": 6, "rowSpan": 4 },
+          "metadata": {
+            "inputs": [
+              { "name": "options", "isOptional": true },
+              { "name": "sharedTimeRange", "isOptional": true }
+            ],
+            "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+            "settings": {
+              "content": {
+                "options": {
+                  "chart": {
+                    "metrics": [
+                      {
+                        "resourceMetadata": {
+                          "id": "${azsawestagingcore_id}"
+                        },
+                        "name": "UsedCapacity",
+                        "aggregationType": 1,
+                        "namespace": "microsoft.storage/storageaccounts",
+                        "metricVisualization": { "displayName": "UsedCapacity" }
+                      }
+                    ],
+                    "title": "Storage Account UsedCapacity for ${azsawestagingcore_name}",
+                    "visualization": { "chartType": 2 }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "6": {
+          "position": { "x": 0, "y": 8, "colSpan": 6, "rowSpan": 4 },
+          "metadata": {
+            "inputs": [
+              { "name": "options", "isOptional": true },
+              { "name": "sharedTimeRange", "isOptional": true }
+            ],
+            "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+            "settings": {
+              "content": {
+                "options": {
+                  "chart": {
+                    "metrics": [
+                      {
+                        "resourceMetadata": {
+                          "id": "${keyvault_id}"  
+                        },
+                        "name": "Availability",
+                        "aggregationType": 1,  
+                        "namespace": "Microsoft.KeyVault/vaults",  
+                        "metricVisualization": { "displayName": "Key Vault Availability" }
+                      }
+                    ],
+                    "title": "Key Vault Availability for ${keyvault_name}",  
+                    "visualization": { "chartType": 2 }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "7": {
+          "position": { "x": 6, "y": 8, "colSpan": 6, "rowSpan": 4 },
+          "metadata": {
+            "inputs": [
+              { "name": "options", "isOptional": true },
+              { "name": "sharedTimeRange", "isOptional": true }
+            ],
+            "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+            "settings": {
+              "content": {
+                "options": {
+                  "chart": {
+                    "metrics": [
+                      {
+                        "resourceMetadata": {
+                          "id": "${data_factory_id}" 
+                        },
+                        "name": "ActivitySucceededRuns", 
+                        "aggregationType": 4,  
+                        "namespace": "Microsoft.DataFactory/factories",  
+                        "metricVisualization": { "displayName": "Total Succeeded Activity Runs" }
+                      }
+                    ],
+                    "title": "Total Succeeded Activity Runs for ${data_factory_name}",  
+                    "visualization": { "chartType": 2 }  
+                }
+              }
+            }
+          }
+        }
+      },
+      "8":{
+        "position": { "x": 12, "y": 8, "colSpan": 6, "rowSpan": 4 },
+        "metadata": {
+          "inputs": [
+            { "name": "options", "isOptional": true },
+            { "name": "sharedTimeRange", "isOptional": true }
+          ],
+          "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+          "settings": {
+            "content": {
+              "options": {
+                "chart": {
+                  "metrics": [
+                    {
+                      "resourceMetadata": {
+                        "id": "${data_factory_id}"  
+                      },
+                      "name": "PipelineSucceededRuns",  
+                      "aggregationType": 4, 
+                      "namespace": "Microsoft.DataFactory/factories",  
+                      "metricVisualization": { "displayName": "Total Succeeded Pipeline Runs" }
+                    }
+                  ],
+                  "title": "Total Succeeded Pipeline Runs for ${data_factory_name}",  
+                  "visualization": { "chartType": 2 }  
+                }
+              }
+            }
+          }
+        }
+      },
+      "9":{
+        "position": { "x": 0, "y": 12, "colSpan": 6, "rowSpan": 4 },
+        "metadata": {
+          "inputs": [
+            { "name": "options", "isOptional": true },
+            { "name": "sharedTimeRange", "isOptional": true }
+          ],
+          "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+          "settings": {
+            "content": {
+              "options": {
+                "chart": {
+                  "metrics": [
+                    {
+                      "resourceMetadata": {
+                        "id": "${data_factory_id}"  
+                      },
+                      "name": "TriggerSucceededRuns",  
+                      "aggregationType": 4,  
+                      "namespace": "Microsoft.DataFactory/factories",  
+                      "metricVisualization": { "displayName": "Total Succeeded Trigger Runs" }
+                    }
+                  ],
+                  "title": "Total Succeeded Trigger Runs for ${data_factory_name}",  
+                  "visualization": { "chartType": 2 }  
+                }
+              }
+            }
+          }
+        }
+      },
+      "10":{
+        "position": { "x": 6, "y": 12, "colSpan": 6, "rowSpan": 4 },
+        "metadata": {
+          "inputs": [
+            { "name": "options", "isOptional": true },
+            { "name": "sharedTimeRange", "isOptional": true }
+          ],
+          "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+          "settings": {
+            "content": {
+              "options": {
+                "chart": {
+                  "metrics": [
+                    {
+                      "resourceMetadata": {
+                        "id": "${data_factory_id}"  
+                      },
+                      "name": "IntegrationRuntimeCpuPercentage",  
+                      "aggregationType": 4,  
+                      "namespace": "Microsoft.DataFactory/factories",  
+                      "metricVisualization": { "displayName": "Monitor integration runtime CPU usage for capacity planning" }
+                    }
+                  ],
+                  "title": "Monitor integration runtime CPU usage for capacity planning ${data_factory_name}",  
+                  "visualization": { "chartType": 2 }  
+                }
+              }
+            }
+          }
+        }
+      },
+      "11":{
+        "position": { "x": 12, "y": 12, "colSpan": 6, "rowSpan": 4 },
+        "metadata": {
+          "inputs": [
+            { "name": "options", "isOptional": true },
+            { "name": "sharedTimeRange", "isOptional": true }
+          ],
+          "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+          "settings": {
+            "content": {
+              "options": {
+                "chart": {
+                  "metrics": [
+                    {
+                      "resourceMetadata": {
+                        "id": "${data_factory_id}"  
+                      },
+                      "name": "TriggerFailedRuns",  
+                      "aggregationType": 4,  
+                      "namespace": "Microsoft.DataFactory/factories",  
+                      "metricVisualization": { "displayName": "Track trigger failure rate for automation reliability" }
+                    }
+                  ],
+                  "title": "Track trigger failure rate for automation reliability ${data_factory_name}",  
+                  "visualization": { "chartType": 2 }  
+                }
+              }
+            }
+          }
+        }
+      },
+      "12":{
+        "position": { "x": 0, "y": 16, "colSpan": 6, "rowSpan": 4 },
+        "metadata": {
+          "inputs": [
+            { "name": "options", "isOptional": true },
+            { "name": "sharedTimeRange", "isOptional": true }
+          ],
+          "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+          "settings": {
+            "content": {
+              "options": {
+                "chart": {
+                  "metrics": [
+                    {
+                      "resourceMetadata": {
+                        "id": "${datalake_id}/blobServices/default"  
+                      },
+                      "name": "BlobCapacity",  
+                      "aggregationType": 4,  
+                      "namespace": "Microsoft.Storage/storageAccounts/blobServices",  
+                      "metricVisualization": { "displayName": "Monitor blob capacity growth" }
+                    }
+                  ],
+                  "title": "Monitor blob capacity growth. ${datalake_name}",  
+                  "visualization": { "chartType": 2 }  
+                }
+              }
+            }
+          }
+        }
+      },
+      "13":{
+        "position": { "x": 6, "y": 16, "colSpan": 6, "rowSpan": 4 },
+        "metadata": {
+          "inputs": [
+            { "name": "options", "isOptional": true },
+            { "name": "sharedTimeRange", "isOptional": true }
+          ],
+          "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+          "settings": {
+            "content": {
+              "options": {
+                "chart": {
+                  "metrics": [
+                    {
+                      "resourceMetadata": {
+                        "id": "${azsawestagingcore_id}/blobServices/default"  
+                      },
+                      "name": "BlobCapacity",  
+                      "aggregationType": 4,  
+                      "namespace": "Microsoft.Storage/storageAccounts/blobServices",  
+                      "metricVisualization": { "displayName": "Monitor blob capacity growth" }
+                    }
+                  ],
+                  "title": "Monitor blob capacity growth. ${azsawestagingcore_name}",  
+                  "visualization": { "chartType": 2 }  
+                }
+              }
+            }
+          }
+        }
+      },
+      "14":{
+        "position": { "x": 12, "y": 16, "colSpan": 6, "rowSpan": 4 },
+        "metadata": {
+          "inputs": [
+            { "name": "options", "isOptional": true },
+            { "name": "sharedTimeRange", "isOptional": true }
+          ],
+          "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+          "settings": {
+            "content": {
+              "options": {
+                "chart": {
+                  "metrics": [
+                    {
+                      "resourceMetadata": {
+                        "id": "${fapp_storage_acc_id}/blobServices/default"  
+                      },
+                      "name": "BlobCapacity",  
+                      "aggregationType": 4,  
+                      "namespace": "Microsoft.Storage/storageAccounts/blobServices",  
+                      "metricVisualization": { "displayName": "Monitor blob capacity growth" }
+                    }
+                  ],
+                  "title": "Monitor blob capacity growth. ${fapp_storage_acc_name}",  
+                  "visualization": { "chartType": 2 }  
+                }
+              }
+            }
+          }
+        }
+      },
+      "15":{
+        "position": { "x": 0, "y": 20, "colSpan": 6, "rowSpan": 4 },
+        "metadata": {
+          "inputs": [
+            { "name": "options", "isOptional": true },
+            { "name": "sharedTimeRange", "isOptional": true }
+          ],
+          "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+          "settings": {
+            "content": {
+              "options": {
+                "chart": {
+                  "metrics": [
+                    {
+                      "resourceMetadata": {
+                        "id": "${functionapp_id}"  
+                      },
+                      "name": "RequestsInApplicationQueue",  
+                      "aggregationType": 4,  
+                      "namespace": "Microsoft.Web/sites",  
+                      "metricVisualization": { "displayName": "Track queue trigger execution success" }
+                    }
+                  ],
+                  "title": "Track queue trigger execution success ${functionapp_name}",  
+                  "visualization": { "chartType": 2 }  
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+}

@@ -1,0 +1,16 @@
+variable "batch_name" {}
+variable "core_rg_location" {}
+variable "core_rg" {}
+variable "core_pe_subnet_id" {}
+variable "batch_pe_name" {}
+variable "node_management" {}
+variable "batch_identity" {}
+variable "batch_pool_name" {}
+variable "acr_login_server_name" {}
+variable "core_batch_account_subnet_id" {}
+variable "environment" {}
+variable "tags" {}
+variable "batch_private_dns_zone_name" {}
+variable "gitlab_resource_group_name" {}
+variable "acr_image_name" {}
+variable "batch_identity_principal_id" {}
